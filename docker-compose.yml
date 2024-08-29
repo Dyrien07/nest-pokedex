@@ -1,0 +1,15 @@
+version: '3.8'
+
+
+services:
+
+  db:
+    image: mongo:6.0.6
+    restart: always
+    
+    volumes:
+      - ./mongo:/data/db
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_DATABASE: nest-pokemon
