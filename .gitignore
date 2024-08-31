@@ -5,6 +5,7 @@
 
 #DB
 /mongo
+.env
 
 # Logs
 logs
